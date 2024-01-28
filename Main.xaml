@@ -1,0 +1,339 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="771,1457" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Globalization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="572,3796" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ChallengeDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Read our data from the excel sheet" DataTable="[ChallengeDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,119" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="VOIS TASK.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop on each row in our data to convert  the joining date column to the data time type instead of the string type" DataTable="[ChallengeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,398" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Joining Date")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(CurrentRow("Joining Date").ToString, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sort our data descending by the joining date column " ColumnName="Joining Date" DataTable="[ChallengeDT]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="510,111" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[ChallengeDT]" SortOrder="Descending">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:SortDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Write the sorted data in the output table challangedt" DataTable="[ChallengeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,395" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CurrentRow(&quot;Joining Date&quot;).ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Visit our website" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="510,2502" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9d5037ce-f311-4fb9-bf68-f2038958b568" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap2010:Annotation.AnnotationText="Click Start the challange" DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,2254" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9d5037ce-f311-4fb9-bf68-f2038958b568" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" CvElementArea="16, 676, 320, 57" CvTextArea="151, 697, 49, 14" CvTextArgument="START" CvType="Button" DesignTimeRectangle="19, 678, 315, 54" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='waves-effect col s12 m12 l12 btn-large uiColorButton' aaname='Start' check:innerText='START' /&gt;" Guid="60f5f9e3-5f21-4e81-9d51-01a62d42668e" InformativeScreenshot="87fbb9d712acb45572755fe50e130883.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop on our sorted data to fill each data entry in our dynamic form" DataTable="[ChallengeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,1911" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1694" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="use the type info to indicate the label and the data entry and set it's id = &quot;*&quot; cause it is a dynamic form " DisplayName="Type Into 'First Name'" sap:VirtualizedContainerService.HintSize="334,197" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[CurrentRow(&quot;First Name&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bdb17ef4-7393-46aa-8d3c-fe7030647c65" InformativeScreenshot="d019ef60c080ea767a0288e039189e51" Selector="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Last Name'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[CurrentRow(&quot;Last Name&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="01c00cb5-629c-470a-a4be-9b91db66675a" InformativeScreenshot="bfe9d866ddc5a8eb40007d7daa736770" Selector="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Address'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[CurrentRow(&quot;Address&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="76c318b8-d55d-4403-84cc-2433bc44912d" InformativeScreenshot="de85ddaac6c421cf9bcbfe5725255e23" Selector="&lt;webctrl aaname='Address' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Company Name'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[CurrentRow(&quot;Company Name&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd50e186-e499-4986-b4e0-b96aeb739890" InformativeScreenshot="5104bb39b2929f0a56c7347c3a6c2e1d" Selector="&lt;webctrl aaname='Company Name' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Phone Number'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0254d958-6879-4cfe-939e-d7ca8edbf393" InformativeScreenshot="a06a2fa0e0fee9eeb2e1d583bd864f0f" Selector="&lt;webctrl aaname='Phone Number' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl id='*' tag='INPUT' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Email'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[CurrentRow(&quot;Email&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4c0095d1-6b40-47f7-a6e1-8b9f0c08a532" InformativeScreenshot="e9541536ceb12d6da2c76ddd2f977977" Selector="&lt;webctrl aaname='Email' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Role in Company'" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[CurrentRow(&quot;Role in Company&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b72895dd-99a2-48ad-b0b4-305d6d80f9f0" InformativeScreenshot="e57e661322a3b5c4a7c0b9869352782e" Selector="&lt;webctrl aaname='Role in Company' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' id='*' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click submit after fill all of the data entries 3 times(rounds) to finsh our rba challange" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="334,199" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9d5037ce-f311-4fb9-bf68-f2038958b568" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.rpachallenge.com/" DesignTimeRectangle="441, 648, 116, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn uiColorButton' aaname='Submit' check:text='Submit' /&gt;" Guid="e6413c3c-bff3-428a-8f4c-d5c2d25db096" ImageBase64="" InformativeScreenshot="4b863baec964b3f300088e3c387cf2e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1cde0e7fee1e1edda483d5cbe7ae487b.jpg" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" Title="Rpa Challenge" Url="https://www.rpachallenge.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
